@@ -1,9 +1,10 @@
-import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RootLayout } from '@/components/layout/RootLayout'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Outlet />,
+    element: <RootLayout />,
     children: [
       {
         index: true,
